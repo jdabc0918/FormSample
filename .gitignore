@@ -1,0 +1,13 @@
+Debug/
+Release
+ipch/
+MainForm.opensdf
+MainForm.sdf
+MainForm.v12.suo
+MainForm/bin/
+ManagedClass/Debug
+UnmanagedClass/Debug
+ManagedClass/Release
+UnmanagedClass/Release
+
+
