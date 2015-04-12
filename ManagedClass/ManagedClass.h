@@ -20,8 +20,10 @@ namespace ManagedClass {
         !mClass();
 
         int launchViewer(System::String^ _img_fname);
+        int showSelectedAreaInfo();
          
         //convert System::String to std::string
         std::string cvtString(System::String^ _Str);
+        
 	};
 }

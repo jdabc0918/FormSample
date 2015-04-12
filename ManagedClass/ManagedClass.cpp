@@ -32,3 +32,8 @@ int ManagedClass::mClass::launchViewer(System::String^ _img_fname)
 {
     return this->umClass->launchViewer(cvtString(_img_fname));
 }
+
+int ManagedClass::mClass::showSelectedAreaInfo()
+{
+    return this->umClass->showSelectedAreaInfo();
+}

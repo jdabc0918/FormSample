@@ -95,5 +95,10 @@ namespace MainForm
             //ListBox1.Items.AddRange(fileName);
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            managedClass.showSelectedAreaInfo();        
+        }
+
     }
 }
