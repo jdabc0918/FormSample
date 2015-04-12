@@ -4,6 +4,15 @@
 
 #include "ManagedClass.h"
 
+//cvtString
+std::string ManagedClass::mClass::cvtString(System::String^ _Str)
+{
+    msclr::interop::marshal_context context;
+    std::string standardString = context.marshal_as<std::string>(_Str);
+
+    return standardString;
+}
+
 ManagedClass::mClass::mClass()
 {
     this->umClass = new UnmanagedClass();
@@ -19,7 +28,7 @@ ManagedClass::mClass::!mClass()
     delete this->umClass;
 }
 
-void ManagedClass::mClass::showImage()
+int ManagedClass::mClass::launchViewer(System::String^ _img_fname)
 {
-    this->umClass->showImage();
+    return this->umClass->launchViewer(cvtString(_img_fname));
 }

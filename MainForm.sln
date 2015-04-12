@@ -4,10 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainForm", "MainForm\MainForm.csproj", "{001032F8-42E2-4FDC-8ADA-602FC6F831DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1AE1D02C-4BC0-453A-B8D7-7B2F68298807} = {1AE1D02C-4BC0-453A-B8D7-7B2F68298807}
+		{FD06A9B4-73CC-4182-A776-D99DB0A99DAC} = {FD06A9B4-73CC-4182-A776-D99DB0A99DAC}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnmanagedClass", "UnmanagedClass\UnmanagedClass.vcxproj", "{FD06A9B4-73CC-4182-A776-D99DB0A99DAC}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ManagedClass", "ManagedClass\ManagedClass.vcxproj", "{1AE1D02C-4BC0-453A-B8D7-7B2F68298807}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FD06A9B4-73CC-4182-A776-D99DB0A99DAC} = {FD06A9B4-73CC-4182-A776-D99DB0A99DAC}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

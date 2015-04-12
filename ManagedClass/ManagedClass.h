@@ -2,9 +2,11 @@
 
 #pragma once
 
+#include <msclr/marshal_cppstd.h>
+
 using namespace System;
 
-#include "../UnmanagedClass/UnmanagedClass.h"
+#include "UnmanagedClass.h"
 
 namespace ManagedClass {
 
@@ -17,6 +19,9 @@ namespace ManagedClass {
         ~mClass();
         !mClass();
 
-        void showImage();
+        int launchViewer(System::String^ _img_fname);
+         
+        //convert System::String to std::string
+        std::string cvtString(System::String^ _Str);
 	};
 }
